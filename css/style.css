@@ -1,0 +1,400 @@
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-red:#EE3643;
+    --basic-green:#63A63E;
+    --basic-grey:#3D546F;
+    --basic-darkgrey:#293449;
+    --basic-dark:#1D2739;
+    --basic-greylight:#C5C5C5;
+    --basic-background:#F1F5F7;
+    --basic-white:#FFFFFF;
+
+    --special-yellow:#FFBF47;
+    --special-blue:#3BBCE3;
+    --special-lilac:#DC91D8;
+    --special-greenlight:#8ED78F;
+    --special-yellowlight:#FFD180;
+    --special-error:#BA2732;
+    --special-success:#5FBB2D;
+    --special-attention:#FFBF47;
+}
+
+/* Global */
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: none;
+  background-color: var(--basic-background);
+}
+a {
+    text-decoration: none;
+  }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Header Menu Part One*/ 
+.header-menu-wrapper {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-darkgrey);
+}
+
+.logo {
+  background-color: var(--basic-red);
+}  
+.logo:active{
+  background-color: var(--special-error);
+}
+.header-search input{
+ font: inherit;
+ color: var(--basic-white);
+ background-color: transparent;
+ border: none;
+}
+/*не понятно пока, как поменять цвет placeholder + при клике меняется вообще все поле*/
+
+.header-bookmarks {
+  color: var(--basic-white);
+  background-color: var(--basic-darkgrey);
+  border: none; 
+} 
+button.header-bookmarks:active{
+  color: rgba(255, 255, 255, 0.5);
+  border: none; 
+}
+/*при клике появляется обводка, border: none; - не работает. Пока оставить как есть?*/
+.header-cart a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+.header-order {
+  background-color: var(--basic-green);
+}
+.header-order a:hover{
+  background-color: var(--special-success)
+}
+.header-order a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*Header Menu Part Two*/  
+.header-menu-wrapper-two {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 21px;
+  color: var(--basic-black);
+}
+.header-text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}  
+.header-phone {
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: var(--basic-red);
+  border: 4px var(--basic-white) solid ;
+  width: 270px;
+  height: 45px;
+}
+.header-adress{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-darkgrey);
+} 
+
+/*Header-user-login*/
+.user-name a{
+  color: var(--basic-black);
+}
+.user-name a:active{
+  color: var(--basic-greylight);
+}
+.header-user-nav a { 
+  line-height: 21px;
+  background-color: var(--basic-white);  
+}
+.header-login-options a{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-darkgrey);
+}
+.header-user-nav a:hover,
+.header-user-nav a:focus,
+.header-login-options a:hover,
+.header-login-options a:focus  {
+  color: var(--basic-red);
+}
+.header-user-nav a:active,
+.header-login-options a:active {
+  color: var(--basic-greylight);
+}
+
+/* Main navigation */
+.main-navigation{
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-white);
+  background-color: var(--basic-grey);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-grey);
+}
+.site-navigation a,
+.header-menu-wrapper a {
+  color: var(--basic-white);
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: var(--basic-darkgrey);
+}
+.site-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*Section: About and map*/
+.index-about-contacts {
+  background-color: var(--basic-white) ;
+}
+.index-about-contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+ .index-about-contacts p{
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.index-about ul{
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+  /* Button */
+.button{
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+  }
+.button:active {
+  background-color: var(--special-error);
+}
+
+/*Inner-style*/
+.inner-page {
+  font-family: 'PT Sans', sans-serif;
+  color: var(--basic-black);
+}
+.page-title{
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-darkgrey);
+  text-transform: uppercase;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+}
+.breadcrumbs a {
+  color: var(--basic-black);
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+/* Filters */
+.filter legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.filter ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+/*Filter button*/
+.filter-show{
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: 1px var(--basic-greylight) solid;
+}
+
+/* Catalog */
+.catalog-list {
+  list-style: none;
+}
+.catalog-item {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  border: 1px var(--basic-greylight) solid;
+}
+.catalog-item h3{
+  text-transform: none;
+  font-size: 18px;
+  line-height: 20px;
+}
+.catalog-item a {
+  color: var(--basic-black);
+}
+.catalog-item:hover,
+.catalog-item:focus{
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.old-price {
+  color: var(--basic-greylight);
+  text-decoration: line-through;
+}
+.current-price {
+  background-color: var(--basic-red);
+  color: var(--basic-white);;
+}
+.new-item{
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red) ;
+}
+
+/*Catalog button*/
+.catalog-item-buy {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--basic-green);
+}
+.catalog-item-buy:hover,
+.catalog-item-buy:focus{
+  background-color: var(--special-success);
+}
+.catalog-item-bookmarks{
+  font-family: 'Cuprum', sans-serif;
+  font-size: 14px;
+  color: var(--basic-darkgrey);
+  background-color: var(--basic-white);
+  border: 3px var(--basic-green) solid;
+}
+.catalog-item-bookmarks:hover,
+.catalog-item-bookmarks:focus{
+  border: 3px var(--basic-darkgrey) solid;
+}
+.catalog-item-bookmarks:active{
+  border: 3px var(--basic-greylight) solid;
+  color: var(--basic-greylight);
+  background-color: var(--basic-white);
+}
+
+
+/*Footer section: one*/
+.footer-box{
+  font-size: 18px;
+  list-style: none;
+  color:var(--basic-white);
+  background-color: var(--basic-grey) ;
+}
+.footer-box li{
+  list-style: none;
+}
+.footer-navigation a{
+  color: var(--basic-white);
+}
+.footer-assortment a{
+  color: var(--special-yellowlight);
+}
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.footer-assortment a:hover,
+.footer-assortment a:focus {
+  text-decoration: underline;
+}
+.footer-navigation a:active,
+.footer-assortment a:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+/*Footer section:two*/
+.footer-oters{
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--basic-darkgrey);
+  color:var(--basic-white);
+}
+
+.footer-socials{
+  list-style: none;
+  text-align: center;
+  background-color: var(--basic-dark) ;
+}
+
+/* Social button */
+.social-button {
+  color: inherit;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-red);
+}
+.footer-feedback a,
+.footer-dev a {
+  color: var(--special-yellowlight);
+}
+.footer-feedback a:hover,
+.footer-feedback a:focus,
+.footer-dev a:hover,
+.footer-dev a:focus {
+  text-decoration: underline;
+}
+.footer-feedback a:active,
+.footer-dev a:active {
+  color: var(--basic-red);
+  text-decoration: none;
+}
+
+/*Others*/
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
