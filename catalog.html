@@ -26,7 +26,7 @@
             <span class="header-order"><a href="">Оформить заказ</a></span>
         </div>
         <!--Вторая группировка разных кнопок и параграфов, на светлом фоне -->
-        <div lass="header-menu-wrapper-two">
+        <div class="header-menu-wrapper-two">
             <p class="header-text">Интернет-магазин<br>
                                    строительных материалов<br>
                                    и инструментов для ремонта
@@ -73,9 +73,9 @@
         </ul>
         <h1 class="page-title">Перфораторы</h1>
         <!--Фильтры------------------------------------------------------------------------------------->
-        <!--<section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров:</h2>
-            <section>         
+        <section class="filters">
+            <h2 class="filter-section-header">Фильтр:</h2>
+            <section class="filter-price">         
                 <h3>Цена:</h3>
                 <div>
                     <button type="button">Правый круг</button>
@@ -84,11 +84,11 @@
                 <span>0</span>
                 <span>-</span>
                 <span>30000</span>
-            </section> --> 
-            <section class="filters">
+            </section> 
+            <section class="">
                 <h3 class="visually-hidden">Фильтры товаров по производителю и электропитанию:</h3>
                 <form class="filter" action="https://echo.htmlacademy.ru" method="get">
-                    <fieldset class="producers-checkbox">
+                    <fieldset class="brand-checkbox">
                         <legend>Производители:</legend>
                         <ul>
                             <li class="filter-checkbox">
@@ -128,18 +128,20 @@
                     </fieldset>
                     <button class="button filter-show" type="submit">Показать</button>
                 </form>                
+            </section>        
+            <section class="catalog-sorting">
+                <div class="catalog-sorting-list">
+                    <h2 class="filter-section-header">Сортировка:</h2>
+                    <ul>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">По цене</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">По типу</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">По функционалу</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">Стрелка вверх</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">Стрелка вниз</button></li>
+                    </ul>
+                </div>
             </section>
-                      
-        <!--<section>
-            <h2>Сортировка:</h2>
-            <ul>
-                <li><button type="button">По цене</button></li>
-                <li><button type="button">По типу</button></li>
-                <li><button type="button">По функционалу</button></li>
-                <li><button type="button">Стрелка вверх</button></li>
-                <li><button type="button">Стрелка вниз</button></li>
-            </ul>
-        </section>-->
+        </section>
       
         <!--Сам Каталог-------------------------------------------------------------------------------------------------->
         <section class="catalog">
@@ -257,20 +259,22 @@
                 </li>
             </ul>
         </section>
-        <!--<h2 class="visually-hidden">Выбор страниц раздела "Перфораторы"</h2>
-        <ul>
-            <li>1</li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">Следующая</a></li>
+        <section class="page-choice">
+        <h2 class="visually-hidden">Выбор страниц раздела "Перфораторы"</h2>
+        <ul class="page-choice-list">
+            <li class="page-choice-item">1</li>
+            <li class="page-choice-item"><a href="">2</a></li>
+            <li class="page-choice-item"><a href="">3</a></li>
+            <li class="page-choice-item"><a href="">Следующая</a></li>
         </ul>
-        <section>            
+        </section>        
+        <section class="about-product-section global-section-header">            
             <h2>Пара слов о Перфораторах</h2>
-            <p>Перфоратор- универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            <p class="global-section-p">Перфоратор- универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                Существуют электромханические и пневматические перфораторы.Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
                В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
             </p>            
-        </section>-->
+        </section>
     </main>
     <!--Футтер---------------------------------------------------------------------------------------------------->
     <footer class="footer">

@@ -4,11 +4,13 @@
     --basic-black: #000000;
     --basic-red:#EE3643;
     --basic-green:#63A63E;
-    --basic-grey:#3D546F;
+    --basic-grey:#32425C;
     --basic-darkgrey:#293449;
     --basic-dark:#1D2739;
+    --basic-bluelight:#F1F5F7;
+    --basic-light:#E5E5E5;
     --basic-greylight:#C5C5C5;
-    --basic-background:#F1F5F7;
+    --basic-cream:#F9F5F0;
     --basic-white:#FFFFFF;
 
     --special-yellow:#FFBF47;
@@ -18,7 +20,6 @@
     --special-yellowlight:#FFD180;
     --special-error:#BA2732;
     --special-success:#5FBB2D;
-    --special-attention:#FFBF47;
 }
 
 /* Global */
@@ -32,7 +33,6 @@ body {
   font-weight: 400;
   color: var(--basic-black);
   text-transform: none;
-  background-color: var(--basic-background);
 }
 a {
     text-decoration: none;
@@ -44,20 +44,22 @@ img {
 }
 
 /*Header Menu Part One*/ 
+.main-header {
+  background-color: var(--basic-bluelight);
+}
 .header-menu-wrapper {
   font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-darkgrey);
 }
-
 .logo {
   background-color: var(--basic-red);
 }  
 .logo:active{
   background-color: var(--special-error);
 }
-.header-search input{
+.header-search input {
  font: inherit;
  color: var(--basic-white);
  background-color: transparent;
@@ -70,7 +72,7 @@ img {
   background-color: var(--basic-darkgrey);
   border: none; 
 } 
-button.header-bookmarks:active{
+button.header-bookmarks:active {
   color: rgba(255, 255, 255, 0.5);
   border: none; 
 }
@@ -81,7 +83,8 @@ button.header-bookmarks:active{
 .header-order {
   background-color: var(--basic-green);
 }
-.header-order a:hover{
+.header-order a:hover
+.header-order a:focus {
   background-color: var(--special-success)
 }
 .header-order a:active {
@@ -109,24 +112,24 @@ button.header-bookmarks:active{
   width: 270px;
   height: 45px;
 }
-.header-adress{
+.header-adress {
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-darkgrey);
 } 
 
 /*Header-user-login*/
-.user-name a{
+.user-name a {
   color: var(--basic-black);
 }
-.user-name a:active{
+.user-name a:active {
   color: var(--basic-greylight);
 }
 .header-user-nav a { 
   line-height: 21px;
   background-color: var(--basic-white);  
 }
-.header-login-options a{
+.header-login-options a {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-darkgrey);
@@ -134,7 +137,7 @@ button.header-bookmarks:active{
 .header-user-nav a:hover,
 .header-user-nav a:focus,
 .header-login-options a:hover,
-.header-login-options a:focus  {
+.header-login-options a:focus {
   color: var(--basic-red);
 }
 .header-user-nav a:active,
@@ -143,7 +146,7 @@ button.header-bookmarks:active{
 }
 
 /* Main navigation */
-.main-navigation{
+.main-navigation {
   font-size: 18px;
   line-height: 20px;
   color: var(--basic-white);
@@ -167,31 +170,136 @@ button.header-bookmarks:active{
   color: rgba(255, 255, 255, 0.5);
 }
 
-/*Section: About and map*/
-.index-about-contacts {
-  background-color: var(--basic-white) ;
+/*Index "Promo" section*/
+.promo-section {
+  font-family: 'Cuprum', sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-white);
 }
-.index-about-contacts h2 {
+.promo-section a {
+  color: var(--basic-white);
+}
+.promo-section-list {
+  list-style: none;
+}
+.index-promo-materials,
+.index-promo-delivery {
+  background-color: var(--special-yellow);
+}
+.index-promo-tools{
+  background-color: var(--special-blue);
+}
+.index-promo-machinery{
+  background-color: var(--special-lilac);
+}
+.index-promo-sale{
+  background-color: var(--special-greenlight);
+}
+/*Slider*/
+
+.index-slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.index-slider p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/*Index "Popular products" section*/
+.index-popular{
+  background-color: var(--basic-white);
+}
+.global-section-header {
+  background-color: var(--basic-cream);
+}
+.global-section-header h2,
+.global-section-header h3 {
+  font-family: 'Cuprum' sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-darkgrey);
 }
- .index-about-contacts p{
-  font-family: PT Sans;
+.popular-section-list {
+  list-style: none;
+}
+
+/*Index "Popular brands"section*/
+.index-popular-brands{
+  background-color: var(--basic-white);
+}
+.index-brand-item {
+  border: 1px var(--basic-greylight) solid;
+}
+.index-brand-item:hover,
+.index-brand-item:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Index Services section*/
+.index-services {
+  background-color: var(--basic-bluelight);
+}
+.index-services h2 {
+  color: var(--basic-black);
+}
+.index-servises-item {
+  background-color: transparent;
+}
+.global-section-p {
+  font-family: 'PT Sans', sans-serif;
+  font-weight:400;
   font-size: 13px;
   line-height: 24px;
 }
+.index-services-buttons button {
+  font-family: Cuprum;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-grey);
+  border:none;
+}
+.index-services-buttons button:hover,
+.index-services-buttons button:focus {
+  background-color: var(--basic-darkgrey);
+}
+.index-services-buttons button:active{
+  color: var(--basic-grey);
+  background-color: var(--basic-white);
+}
 
-.index-about ul{
+/*Index "About" and "Map" section*/
+.index-about,
+.index-contacts {
+  background-color: var(--basic-white) ;
+}
+.index-about h2,
+.index-contacts h2 {
+  color: var(--basic-black);
+}
+.index-about ul {
   list-style: none;
   font-size: 18px;
   line-height: 24px;
 }
   /* Button */
-.button{
+.button {
   font: inherit;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -203,13 +311,25 @@ button.header-bookmarks:active{
   background-color: var(--special-error);
 }
 
+.button-promo-item {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.button-promo-item:hover,
+.button-promo-item:focus {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+.button-promo-item:active {
+  background-color: rgba(66, 66, 66, 0.3);
+}
+
 /*Inner-style*/
 .inner-page {
   font-family: 'PT Sans', sans-serif;
   color: var(--basic-black);
 }
-.page-title{
+.page-title {
   font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: var(--basic-darkgrey);
@@ -245,9 +365,41 @@ button.header-bookmarks:active{
   line-height: 19px;
   text-transform: uppercase;
 }
+.filter-section-header {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-cream);
+  border: none;
+}
+.catalog-sorting li {
+  list-style: none;
+}
+.catalog-sorting-list {
+  background-color: var(--basic-cream);
+}
+.catalog-sorting-item {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px var(--basic-red) dashed;
+}
+.catalog-sorting-item:hover,
+.catalog-sorting-item:focus {
+  color: var(--basic-black);
+  border-bottom: 1px var(--basic-red) solid;
+}
+.catalog-sorting-item:active {
+  color: var(--basic-red);
+  border-bottom: none;
+}
 
+.filter-price div,
+.filter-price span {
+  background-color: var(--basic-cream);
+}
 /*Filter button*/
-.filter-show{
+.filter-show {
   background-color: var(--basic-white);
   color: var(--basic-black);
   border: 1px var(--basic-greylight) solid;
@@ -266,7 +418,7 @@ button.header-bookmarks:active{
   background-color: var(--basic-white);
   border: 1px var(--basic-greylight) solid;
 }
-.catalog-item h3{
+.catalog-item h3 {
   text-transform: none;
   font-size: 18px;
   line-height: 20px;
@@ -275,7 +427,7 @@ button.header-bookmarks:active{
   color: var(--basic-black);
 }
 .catalog-item:hover,
-.catalog-item:focus{
+.catalog-item:focus {
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .old-price {
@@ -286,7 +438,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--basic-red);
   color: var(--basic-white);;
 }
-.new-item{
+.new-item {
   font-family: 'Cuprum', sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -303,10 +455,10 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: var(--basic-green);
 }
 .catalog-item-buy:hover,
-.catalog-item-buy:focus{
+.catalog-item-buy:focus {
   background-color: var(--special-success);
 }
-.catalog-item-bookmarks{
+.catalog-item-bookmarks {
   font-family: 'Cuprum', sans-serif;
   font-size: 14px;
   color: var(--basic-darkgrey);
@@ -314,30 +466,62 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 3px var(--basic-green) solid;
 }
 .catalog-item-bookmarks:hover,
-.catalog-item-bookmarks:focus{
+.catalog-item-bookmarks:focus {
   border: 3px var(--basic-darkgrey) solid;
 }
-.catalog-item-bookmarks:active{
+.catalog-item-bookmarks:active {
   border: 3px var(--basic-greylight) solid;
   color: var(--basic-greylight);
   background-color: var(--basic-white);
 }
+/*Page Choice*/
+.page-choice-list li {
+list-style: none;
+font-family: 'PT Sans',sans-serif;
+font-size: 13px;
+line-height: 18px;
+text-transform: uppercase;
+border: 1px var(--basic-light) solid;
 
+}
+.page-choice-list a {
+  color: var(--basic-black);
+}
+.page-choice-item:hover,
+.page-choice-item:focus {
+  border: 1px var(--basic-greylight) solid;
+}
+.page-choice-item:active {
+  border: 1px var(--basic-red) solid;
+}
+
+/*Catalog "About product" section*/
+.about-product-section{
+  background-color: var(--basic-bluelight);
+}
+.about-product-section h2 {
+  color: var(--basic-black);
+  background-color: var(--basic-bluelight);
+
+}
 
 /*Footer section: one*/
-.footer-box{
+.footer{
+  font-weight: 400;
+}
+.footer-box {
   font-size: 18px;
   list-style: none;
   color:var(--basic-white);
-  background-color: var(--basic-grey) ;
+  background-color: var(--basic-grey);
 }
-.footer-box li{
+.footer-box li {
   list-style: none;
 }
-.footer-navigation a{
+.footer-navigation a {
   color: var(--basic-white);
 }
-.footer-assortment a{
+.footer-assortment a {
   color: var(--special-yellowlight);
 }
 .footer-navigation a:hover,
@@ -353,14 +537,14 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /*Footer section:two*/
-.footer-oters{
+.footer-oters {
   font-size: 16px;
   line-height: 18px;
   background-color: var(--basic-darkgrey);
   color:var(--basic-white);
 }
 
-.footer-socials{
+.footer-socials {
   list-style: none;
   text-align: center;
   background-color: var(--basic-dark) ;
