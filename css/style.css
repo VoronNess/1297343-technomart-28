@@ -76,7 +76,6 @@ button.header-bookmarks:active {
   color: rgba(255, 255, 255, 0.5);
   border: none; 
 }
-/*при клике появляется обводка, border: none; - не работает. Пока оставить как есть?*/
 .header-cart a:active {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -120,13 +119,14 @@ button.header-bookmarks:active {
 
 /*Header-user-login*/
 .user-name a {
-  color: var(--basic-black);
+  color: inherit;
 }
 .user-name a:active {
   color: var(--basic-greylight);
 }
 .header-user-nav a { 
   line-height: 21px;
+  color: inherit;
   background-color: var(--basic-white);  
 }
 .header-login-options a {
@@ -222,7 +222,7 @@ button.header-bookmarks:active {
 }
 .global-section-header h2,
 .global-section-header h3 {
-  font-family: 'Cuprum' sans-serif;
+  font-family: 'Cuprum', sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -334,15 +334,20 @@ button.header-bookmarks:active {
   line-height: 30px;
   color: var(--basic-darkgrey);
   text-transform: uppercase;
+  background-color: var(--basic-bluelight);
 }
-
+.inner-page .site-navigation{
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
 /* Breadcrumbs */
 .breadcrumbs {
   list-style: none;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  
 }
 .breadcrumbs a {
   color: var(--basic-black);
@@ -373,6 +378,13 @@ button.header-bookmarks:active {
   text-transform: uppercase;
   background-color: var(--basic-cream);
   border: none;
+}
+.filter-price h3 {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
 }
 .catalog-sorting li {
   list-style: none;
@@ -502,7 +514,6 @@ border: 1px var(--basic-light) solid;
 .about-product-section h2 {
   color: var(--basic-black);
   background-color: var(--basic-bluelight);
-
 }
 
 /*Footer section: one*/
@@ -572,6 +583,11 @@ border: 1px var(--basic-light) solid;
 .footer-dev a:active {
   color: var(--basic-red);
   text-decoration: none;
+}
+.inner-page .footer {
+  font-family: 'Cuprum', sans-serif;
+  font-weight: 400;
+
 }
 
 /*Others*/
