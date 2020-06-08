@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт" </title>
@@ -7,35 +7,40 @@
     <link rel="stylesheet" href="css/normalize.css" >
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-body">
     <!--Хеддер-->
     <header class="main-header">
         <!--Первая группировка лого, кнопок и ссылок, на темном фоне-->
-        <div class="header-menu-wrapper">
-            <img class="header-logo logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
-            <form action="https://echo.htmlacademy.ru" method="get">
-                <p class="header-search">
-                    <input class="visually-hidden search-icon" type="submit" value="Найти">
-                    <input type="search" name="search" placeholder="Поиск:">
-                </p>
-            </form>
-            <button class="header-bookmarks bookmarks-icon" type="button">Закладки: 0</button>
-            <span class="header-cart cart-icon"><a href="">Корзина: 0</a></span>
-            <span class="header-order"><a href="">Оформить заказ</a></span>
+        <div class="header-wrapper">
+            <div class="header-menu-wrapper container">
+                <img class="header-logo logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
+                <form action="https://echo.htmlacademy.ru" method="get">
+                    <p class="header-search">
+                        <input class="visually-hidden search-icon" type="submit" value="Найти">
+                        <input type="search" name="search" placeholder="Поиск:">
+                    </p>
+                </form>
+                <button class="header-bookmarks bookmarks-icon" type="button">Закладки: 0</button>
+                <span class="header-cart cart-icon"><a href="">Корзина: 0</a></span>
+                <span class="header-order"><a href="">Оформить заказ</a></span>
+            </div>
         </div>
         <!--Вторая группировка разных кнопок и параграфов, на светлом фоне -->
-        <div class="header-menu-wrapper-two">
+        <div class="header-menu-wrapper-two container">
             <p class="header-text">Интернет-магазин<br>
-                строительных материалов<br>
-                и инструментов для ремонта
+                                   строительных материалов<br>
+                                   и инструментов для ремонта
             </p>
-            <p class="header-phone phone-icon">+7 (812) 555-05-55</p>
-            <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <div class="header-contact">
+                <p class="header-phone phone-icon">+7 (812) 555-05-55</p>
+                <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            </div>
             <div class="header-user-nav">
                 <a class="header-login login-icon" href="">Войти</a>
                 <a class="header-registration" href="">Регистрация</a>
             </div>
         </div>
+        <div class="container">
             <nav class="main-navigation">
                 <ul class="site-navigation">
                     <li>Главная</li>
@@ -46,9 +51,10 @@
                     <li><a href="">Доставка</a></li>
                     <li><a href="">Контакты</a></li>
                 </ul>
-            </nav>     
+            </nav> 
+        </div>    
     </header>
-    <main>
+    <main class="container">
         <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт"</h1> 
         <section class="promo-section">
             <h2 class="visually-hidden">Промо-блок</h2>
@@ -252,62 +258,72 @@
         </div>   
     </main>
     <!--Футтер---------------------------------------------------------------------------------------------------->
-    <footer class="footer">
+    <footer class="page-footer footer ">
     <!--Секция первая, светло-серая, с лого и ссылками на другие разделы-->
-        <div class="footer-box">
-            <img class="footer-logo logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
-            <h2 class="visually-hidden">Адрес</h2>
-            <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
-            </p>
-            <h2 class="visually-hidden">Навигация по сайту</h2>
-            <ul class="footer-navigation">
-                <li><a href="">Компания</a></li>
-                <li><a href="">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>            
-            <h2 class="visually-hidden">Ассортимент</h2>
-            <ul class="footer-assortment">
-                <li><a href="">Материаллы</a></li>
-                <li><a href="">Техника</a></li>
-                <li><a href="">Инструмент</a></li>
-                <li><a href="">Спецпредложения</a></li>
-            </ul>
-        </div>
-
-    <!--Секция вторая, темно-серая, с копирайтом, соцсетями, обратной связью и разработчиками -->
-        <div class="footer-oters">
-            <p class="footer-copyright">© 2010-2019 Компания "Техномарт"<br>
-            Все права защищены</p>
-            <h2 class="visually-hidden">Соцсети</h2>
-            <ul class="footer-socials">
-                <li>
-                    <a class="social-button" href="">
-                        <span class="visually-hidden">Вконтакте</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="">
-                        <span class="visually-hidden">Фэйсбук</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="social-button" href="">
-                        <span class="visually-hidden">Инстаграм</span>
-                    </a>
-                </li>
-            </ul>
-            <p class="footer-feedback">Обратная связь:<br>
-            <a href="">mail@htmlacademy.ru</a>
-            </p>
-            <p class="footer-dev">Разработано -<br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        <div class="footer-wrapper"> 
+            <div class="container">
+                <div class="footer-box">
+                    <div class="footer-box-logo-adress">
+                        <img class="footer-logo logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
+                        <h2 class="visually-hidden">Адрес</h2>
+                        <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+                        +7 (812) 555-05-55
+                        </p>
+                    </div>
+                    <div class="footer-nav-assort">
+                        <h2 class="visually-hidden">Навигация по сайту</h2>
+                        <ul class="footer-navigation">
+                            <li><a href="">Компания</a></li>
+                            <li><a href="">Новости</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="">Доставка</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>            
+                        <h2 class="visually-hidden">Ассортимент</h2>
+                        <ul class="footer-assortment">
+                            <li><a href="">Материаллы</a></li>
+                            <li><a href="">Техника</a></li>
+                            <li><a href="">Инструмент</a></li>
+                            <li><a href="">Спецпредложения</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <!--Секция вторая, темно-серая, с копирайтом, соцсетями, обратной связью и разработчиками -->
+        <div class="footer-wrapper-two">
+            <div class="container">
+                <div class="footer-oters">
+                    <p class="footer-copyright">© 2010-2019 Компания "Техномарт"<br>
+                    Все права защищены</p>
+                    <h2 class="visually-hidden">Соцсети</h2>
+                    <ul class="footer-socials">
+                        <li>
+                            <a class="social-button" href="">
+                                <span class="visually-hidden">Вконтакте</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="">
+                                <span class="visually-hidden">Фэйсбук</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-button" href="">
+                                <span class="visually-hidden">Инстаграм</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="footer-feedback">Обратная связь:<br>
+                    <a href="">mail@htmlacademy.ru</a>
+                    </p>
+                    <p class="footer-dev">Разработано -<br>
+                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </div>
+            </div>  
         </div>           
     </footer>       
-    <!--<section class="visually-hidden">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
+       <!-- <h2 class="modal visually-hidden ">Форма обратной связи</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
                 <label for="feedback-name">Ваше имя:</label> 
@@ -325,7 +341,7 @@
             <button type="button">Закрыть</button>
         </form>
      </section> 
-     <section class="visually-hidden">
+     <section class="modal visually-hidden">
         <h2 class="visually-hidden">Уведомление о состоянии товара</h2>
         <p>Товар добавлен в корзину!</p>
         <button type="button">Закрыть</button>
