@@ -81,15 +81,27 @@
         <!--Фильтры------------------------------------------------------------------------------------->
         <section class="filters">
             <h2 class="filter-section-header">Фильтр:</h2>
+            <section class="catalog-sorting">
+                <div class="catalog-sorting-list">
+                    <h2 class="filter-section-header">Сортировка:</h2>
+                    <ul>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">По цене</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">По типу</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">По функционалу</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">Стрелка вверх</button></li>
+                        <li><button class="catalog-sorting-item filter-section-header" type="button">Стрелка вниз</button></li>
+                    </ul>
+                </div>
+            </section>
             <section class="filter-price">         
                 <h3>Цена:</h3>
-                <div>
+                <div class="price-buttons">
                     <button type="button">Правый круг</button>
                     <button type="button">Левый круг</button>
                 </div>
-                <span>0</span>
+                <span class="price-min">0</span>
                 <span>-</span>
-                <span>30000</span>
+                <span class="price-max">30000</span>
             </section> 
             <section class="filters">
                 <h3 class="visually-hidden">Фильтры товаров по производителю и электропитанию:</h3>
@@ -135,18 +147,7 @@
                     <button class="button filter-show" type="submit">Показать</button>
                 </form>                
             </section>        
-            <section class="catalog-sorting">
-                <div class="catalog-sorting-list">
-                    <h2 class="filter-section-header">Сортировка:</h2>
-                    <ul>
-                        <li><button class="catalog-sorting-item filter-section-header" type="button">По цене</button></li>
-                        <li><button class="catalog-sorting-item filter-section-header" type="button">По типу</button></li>
-                        <li><button class="catalog-sorting-item filter-section-header" type="button">По функционалу</button></li>
-                        <li><button class="catalog-sorting-item filter-section-header" type="button">Стрелка вверх</button></li>
-                        <li><button class="catalog-sorting-item filter-section-header" type="button">Стрелка вниз</button></li>
-                    </ul>
-                </div>
-            </section>
+           
         </section>
       
         <!--Сам Каталог-------------------------------------------------------------------------------------------------->
