@@ -15,20 +15,17 @@
             <div class="header-menu-wrapper container">
                 <div class="logo-wrapper">
                     <img class="header-logo logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
-                 </div>
+                 </div>                 
                 <form action="https://echo.htmlacademy.ru" method="get">
-                    <p class="header-search">
-                        <input class="visually-hidden search-icon" type="submit" value="Найти">
-                        <input type="search" name="search" placeholder="Поиск:">
+                    <p class="header-search">                            
+                        <input class="visually-hidden" type="submit" value="Найти">
+                        <svg width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff"  opacity="0.3" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                        <input class="search-icon" type="search" name="search" placeholder="Поиск:">
                     </p>
-                </form>
-                
-                    <button class="header-bookmarks bookmarks-icon" type="button">Закладки: 0</button>
-                 
-                <span class="header-cart cart-icon"><a href="">Корзина: 0</a></span>
-                <div class="header-order-wrapper">
-                    <a class="header-order" href="">Оформить заказ</a>
-                </div>
+                </form>                
+                <button class="header-bookmarks" type="button">Закладки: 0</button>
+                <a class="header-cart" href="">Корзина: 0</a>         
+                <a class="header-order" href="">Оформить заказ</a>                
             </div>   
         </div>
         <!--Вторая группировка разных кнопок и параграфов, на светлом фоне -->
@@ -42,14 +39,17 @@
                 <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             </div>
             <div class="header-user-nav">
-                <a class="header-login login-icon" href="">Войти</a>
+                <a class="header-login" href="">
+                    <svg  width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" fill="#c5c5c5"/></svg>
+                    Войти
+                </a>
                 <a class="header-registration" href="">Регистрация</a>
             </div>
         </div>
         <div class="container">
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li>Главная</li>
+                    <li><a href="">Главная</a></li>
                     <li><a href="">Компания</a></li>
                     <li><a href="catalog.html">Каталог</a></li>
                     <li><a href="">Новости</a></li>
@@ -308,11 +308,6 @@
                 <img src="img/map.png" width="300" height="158" alt="Карта с указателем адреса: Большая Конюшеная ул., 19" >
                 <a class="button contacts-button-lost" href="">Заблудились? Напишите нам!</a>
             </section>
-            <section class="visually-hidden">
-                <h2 class="visually-hidden">Расширенная карта</h2>
-                <img src="img/big-map" width="943" height="500" alt="Расширенная карта с указателем адреса магазина: Большая Конюшеная ул., 19. Недалеко от магазина находится Волынский переулок. Западнее, через реку Мойка -  Дворцовая площадь и Эрмитаж">
-                <button type="button">Закрыть</button>
-            </section>
         </div>   
     </main>
     <!--Футтер---------------------------------------------------------------------------------------------------->
@@ -358,18 +353,18 @@
                     Все права защищены</p>
                     <h2 class="visually-hidden">Соцсети</h2>
                     <ul class="footer-socials">
-                        <li>
-                            <a class="social-button" href="">
+                        <li class="vk-link">
+                            <a href="">
                                 <span class="visually-hidden">Вконтакте</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="social-button" href="">
+                        <li class="fb-link">
+                            <a href="">
                                 <span class="visually-hidden">Фэйсбук</span>
                             </a>
                         </li>
-                        <li>
-                            <a class="social-button" href="">
+                        <li class="insta-link">
+                            <a href="">
                                 <span class="visually-hidden">Инстаграм</span>
                             </a>
                         </li>
@@ -382,7 +377,13 @@
                 </div>
             </div>  
         </div>           
-    </footer>       
+    </footer>  
+  <section class="modal modal-map ">
+        <h2 class="visually-hidden">Расширенная карта</h2>
+        <img src="img/big-map.png" width="980" height="487" alt="Расширенная карта с указателем адреса магазина: Большая Конюшеная ул., 19. Недалеко от магазина находится Волынский переулок. Западнее, через реку Мойка -  Дворцовая площадь и Эрмитаж">
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
+          
+    </section>     
        <!-- <h2 class="modal visually-hidden ">Форма обратной связи</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
             <p>
