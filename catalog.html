@@ -110,10 +110,11 @@
                                         <div class="price-controls">
                                             <label class="min-price">
                                                 <input type="number" name="min-price" value="0">
-                                              </label>
-                                              <label class="max-price"> -
-                                                   <input type="number" name="max-price" value="30000">
-                                              </label>
+                                            </label>
+                                            <span class="price-dash">–</span>
+                                            <label class="max-price">
+                                                <input type="number" name="max-price" value="30000">
+                                            </label>
                                         </div>
                                       </div>
                                 </fieldset>
@@ -122,7 +123,9 @@
                     </section> 
                     <section class="filters">
                         <h3 class="visually-hidden">Фильтры товаров по производителю и электропитанию:</h3>
-                        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+                        <span class="filter-line-one"></span>
+                        
+                        <form class="filter" action="https://echo.htmlacademy.ru" method="get">                            
                             <fieldset class="brand-checkbox">
                                 <legend>Производители:</legend>
                                 <ul>
@@ -143,7 +146,7 @@
                                         <label for="filter-dewalt">Dewalt</label> 
                                     </li>
                                     <li class="filter-option filter-checkbox">
-                                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi" disabled>
                                         <label for="filter-hitachi">Hitachi</label> 
                                     </li>
                                 </ul>
@@ -162,7 +165,8 @@
                                 </ul>
                             </fieldset>
                             <button class="filter-show" type="submit">Показать</button>
-                        </form>                
+                        </form>  
+                        <span class="filter-line-two"></span>              
                     </section>         
                 </section>
             
@@ -175,8 +179,12 @@
                                     <li><button class="catalog-sorting-item" type="button">По цене</button></li>
                                     <li><button class="catalog-sorting-item" type="button">По типу</button></li>
                                     <li><button class="catalog-sorting-item" type="button">По функционалу</button></li>
-                                    <li><button class="catalog-sorting-item" type="button">Стрелка вверх</button></li>
-                                    <li><button class="catalog-sorting-item" type="button">Стрелка вниз</button></li>
+                                    <li><button class="sorting-arrow" type="button" aria-label="Стрелка вверх">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                                    </button>
+                                    <button class="sorting-arrow" type="button" aria-label="Стрелка вниз">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                                    </button></li>
                                 </ul>
                             </div>
                         </section>
@@ -350,7 +358,7 @@
                     <section class="page-choice">
                         <h2 class="visually-hidden">Выбор страниц раздела "Перфораторы"</h2>
                         <ul class="page-choice-list">
-                            <li class="page-choice-item">1</li>
+                            <li class="page-choice-item"><a href="">1</a></li>
                             <li class="page-choice-item"><a href="">2</a></li>
                             <li class="page-choice-item"><a href="">3</a></li>
                             <li class="page-choice-item"><a href="">Следующая</a></li>
