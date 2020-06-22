@@ -28,7 +28,7 @@
                 </form>                
                 <a class="header-bookmarks" href="">Закладки: 0</a>
                 <a class="header-cart" href="">Корзина: 0</a>         
-                <a class="header-order" href="">Оформить заказ</a>                
+                <a class="header-order" href="">Оформить заказ</a>              
             </div>   
         </div>
         <!--Вторая группировка разных кнопок и параграфов, на светлом фоне -->
@@ -39,7 +39,7 @@
             </p>
             <div class="header-contact">
                 <a class="header-phone phone-icon" href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
-                <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8г.</p>
             </div>
             <div class="header-user-nav">
                 <a class="header-login" href="">
@@ -48,6 +48,7 @@
                 </a>
                 <a class="header-registration" href="">Регистрация</a>
             </div>
+            
         </div>
         <div class="container">
             <nav class="main-navigation">
@@ -248,7 +249,6 @@
         </div>
         <section class="index-services">
             <div class="container">
-                
                 <h2 class="index-services-header" >Сервисы</h2>
                 <p class="index-services-text">Хороший интеренет-магазин отличается от плохого не только ценами!<br>
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -271,7 +271,7 @@
                             </p>
                             <span class="service-pic-delivery"></span>
                         </li>
-                        <li class="index-services-item services-slide  ">                     
+                        <li class="index-services-item services-slide">                     
                             <h3 class="service-item-header">Гарантия</h3>
                             <p class="service-item-text">Если купленный у нас товар поломается или заскрипит,<br>
                             а также в случае пожара, спровацированного его<br>
@@ -281,7 +281,7 @@
                             </p> 
                             <span class="service-pic-garantee"></span>               
                         </li>  
-                        <li class="index-services-item services-slide ">
+                        <li class="index-services-item services-slide">
                             <h3 class="service-item-header">Кредит</h3>
                             <p class="service-item-text">Залезть в долговую яму стало проще!<br>
                             Кредитные консультанты придут вам на помощь.   
@@ -296,11 +296,11 @@
         <!--Секция о компании, доставке и о контактах -->        
         <div class="index-about-contacts container" >
             <section class="index-about">
-            <h2>Компания "Техномарт"</h2>
-            <p class="global-section-p">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+            <h2>Компания «Техномарт»</h2>
+            <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
             ремонта и строительства не оставит равнодушними любителей сэкономить на<br>
-            на гастарбайтерах.
-            </p>
+            гастарбайтерах.
+            </p><br>
             <h2 class="visually-hidden">Доставка</h2>  
             <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями:</p>
@@ -359,7 +359,7 @@
         <div class="footer-wrapper-two">
             <div class="container">
                 <div class="footer-oters">
-                    <p class="footer-copyright">© 2010-2019 Компания "Техномарт"<br>
+                    <p class="footer-copyright">© 2010-2019 Компания «Техномарт»<br>
                     Все права защищены</p>
                     <h2 class="visually-hidden">Соцсети</h2>
                     <ul class="footer-socials">
@@ -379,11 +379,14 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="footer-feedback">Обратная связь:<br>
-                    <a href="">mail@htmlacademy.ru</a>
-                    </p>
-                    <p class="footer-dev">Разработано -<br>
-                    <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                    <div class="footer-feedback-dev">
+                        <p class="footer-feedback">Обратная связь:<br>
+                        <a href="">mail@htmlacademy.ru</a>
+                        </p>
+                        <p class="footer-dev">Разработано -<br>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                        </p>
+                    </div>
                 </div>
             </div>  
         </div>           
@@ -397,36 +400,24 @@
             <h2 class="visually-hidden">Форма обратной связи</h2>
             <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">  
                     <div class="feedback-user-contacts">
-                        <p>
+                        <div>
                             <label for="feedback-name">Ваше имя:</label> 
                             <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-                        </p>
-                        <p>
+                        </div>
+                        <div>
                             <label for="feedback-email">Ваше e-mail:</label> 
                             <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
-                        </p>
-                    </div> 
-                    <p>                       
+                        </div>    
+                        </div>                                   
                         <label for="feedback-message">Текст письма:</label> 
                         <textarea id="feedback-message" name="message" rows="1" cols="1" placeholder="В свободной форме"></textarea>
-                    </p>
                 </div>
                 <div class="feedback-button-wrapper">
-                    <div class="feedback-wrapper">
-                        <button class="button" type="submit">Отправить</button>
-                    </div>
+                    <button class="button" type="submit">Отправить</button>
+                </div>        
             </form>
+            <div class="feedback-button-back"></div>
                 <button class="modal-close" type="button" aria-label="Закрыть"></button> 
      </section> 
-     <section class="modal modal-notification">
-        <h2 class="visually-hidden">Уведомление о состоянии товара</h2>
-        <span class="icon-mark"></span>
-        <p class="modal-notification-text">Товар добавлен в корзину!</p>
-        <button class="modal-close" type="button" aria-label="Закрыть"></button>
-        <p class="modal-notification-buttons">
-            <a class="button " href="">Оформить заказ</a>
-            <button class="modal-continue-button" type="button">Продолжить покупки</button>
-        </p>
-    </section> 
 </body>
 </html>

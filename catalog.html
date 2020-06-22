@@ -19,12 +19,14 @@
                     </a>
                 </div>    
                 <form action="https://echo.htmlacademy.ru" method="get">
-                    <p class="header-search">
+                    <div class="header-search">                            
+                        <input class="search-icon" type="search" name="search" placeholder="Поиск:">
                         <button class="search-button" type="submit" value="Найти">
-                            <svg width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff"  opacity="0.3" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+                            <svg width="17" height="17" viewBox="0 0 17 17">
+                                <path fill="#ffffff"  opacity="0.3" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                            </svg>
                         </button>
-                        <input type="search" name="search" placeholder="Поиск:">
-                    </p>
+                    </div>
                 </form>
                 <a class="header-bookmarks" href="">Закладки: 0</a>
                 <a class="header-cart" href="">Корзина: 10</a>
@@ -45,17 +47,20 @@
                 <h2 class="visually-hidden">Личный профиль</h2>
                 <p class="user-name">
                     <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
-                    <a class="user-name-text "  href=""> Равшан Джамшутович</a>
+                    <a class="user-name-text "  href="">Равшан Джамшутович</a>
                     <a class="icon-logout " href="" aria-label="Выйти">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
                     </a>   
                 </p>
                 <div class="header-login-options">
-                    <a href="">Мои заказы</a>
-                    <svg width="4" height="4">
-                          <rect fill="#32425C" width="4" height="4">
-                    </svg>
-                    <a href="">Личный кабинет</a>
+                    <ul>
+                        <li>
+                            <a href="">Мои заказы</a>
+                        </li>
+                        <li>
+                            <a href="">Личный кабинет</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </div>
@@ -122,9 +127,7 @@
                         </div>
                     </section> 
                     <section class="filters">
-                        <h3 class="visually-hidden">Фильтры товаров по производителю и электропитанию:</h3>
-                        <span class="filter-line-one"></span>
-                        
+                        <h3 class="visually-hidden">Фильтры товаров по производителю и электропитанию:</h3>                  
                         <form class="filter" action="https://echo.htmlacademy.ru" method="get">                            
                             <fieldset class="brand-checkbox">
                                 <legend>Производители:</legend>
@@ -165,8 +168,7 @@
                                 </ul>
                             </fieldset>
                             <button class="filter-show" type="submit">Показать</button>
-                        </form>  
-                        <span class="filter-line-two"></span>              
+                        </form>        
                     </section>         
                 </section>
             
@@ -176,10 +178,10 @@
                             <div class="catalog-sorting-wrapper">
                                 <h2 class="catalog-sorting-header">Сортировка:</h2>
                                 <ul class="catalog-sorting-list">
-                                    <li><button class="catalog-sorting-item" type="button">По цене</button></li>
+                                    <li><button class="catalog-sorting-item sorting-current" type="button">По цене</button></li>
                                     <li><button class="catalog-sorting-item" type="button">По типу</button></li>
                                     <li><button class="catalog-sorting-item" type="button">По функционалу</button></li>
-                                    <li><button class="sorting-arrow" type="button" aria-label="Стрелка вверх">
+                                    <li><button class="sorting-arrow sorting-arrow-current" type="button" aria-label="Стрелка вверх">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
                                     </button>
                                     <button class="sorting-arrow" type="button" aria-label="Стрелка вниз">
@@ -368,7 +370,7 @@
                     <section class="page-choice">
                         <h2 class="visually-hidden">Выбор страниц раздела "Перфораторы"</h2>
                         <ul class="page-choice-list">
-                            <li class="page-choice-item"><a href="">1</a></li>
+                            <li class="page-choice-item page-choice-current"><a href="">1</a></li>
                             <li class="page-choice-item"><a href="">2</a></li>
                             <li class="page-choice-item"><a href="">3</a></li>
                             <li class="page-choice-item"><a href="">Следующая</a></li>
@@ -382,7 +384,7 @@
                 <h2>Пара слов о Перфораторах</h2>
                 <p>Перфоратор – универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
-                В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
                 </p>  
             </div>          
         </section>
@@ -448,11 +450,14 @@
                                 </a>
                             </li>
                         </ul>
-                        <p class="footer-feedback">Обратная связь:<br>
-                        <a href="">mail@htmlacademy.ru</a>
-                        </p>
-                        <p class="footer-dev">Разработано -<br>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                        <div class="footer-feedback-dev">
+                            <p class="footer-feedback">Обратная связь:<br>
+                            <a href="">mail@htmlacademy.ru</a>
+                            </p>
+                            <p class="footer-dev">Разработано -<br>
+                            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                            </p>
+                        </div>
                     </div>
                 </div>  
             </div>           
