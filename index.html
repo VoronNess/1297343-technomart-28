@@ -341,7 +341,7 @@
                 <p>Вы можете забрать товар сами,<br>
                 заехав в наш офис:</p>
                 <img src="img/map.png" width="300" height="158" alt="Карта с указателем адреса: Большая Конюшеная ул., 19" >
-                <a class="button contacts-button-lost" href="">Заблудились? Напишите нам!</a>
+                <a class="button contacts-button-lost" href="login.html">Заблудились? Напишите нам!</a>
             </section>
         </div>   
     </main>
@@ -432,15 +432,15 @@
                 <div class="feedback-user-contacts">
                         <div>
                             <label for="feedback-name">Ваше имя:</label> 
-                            <input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+                            <input id="feedback-name" type="text" name="user" placeholder="Имя Фамилия" required>
                         </div>
                         <div>
                             <label for="feedback-email">Ваш e-mail:</label> 
-                            <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
+                            <input id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
                         </div>    
                     </div>                                  
                         <label for="feedback-message">Текст письма:</label> 
-                        <textarea id="feedback-message" name="message" rows="1" cols="1" placeholder="В свободной форме"></textarea>
+                        <textarea id="feedback-message" name="message" rows="1" cols="1" placeholder="В свободной форме" required></textarea>
                 <div class="feedback-button-wrapper">
                     <button class="button" type="submit">Отправить</button>
                 </div>        
@@ -448,5 +448,6 @@
             <div class="feedback-button-back"></div>
                 <button class="modal-close" type="button" aria-label="Закрыть"></button> 
      </section> 
+     <script src="js/feedback.js"></script>
 </body>
 </html>
