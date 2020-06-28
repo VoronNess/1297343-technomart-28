@@ -2082,7 +2082,6 @@ input::-webkit-inner-spin-button {
   animation: shake;
   animation-duration: 0.6s;
 }
-
 .modal-close {
   position: absolute;
   top: 12px;
@@ -2118,9 +2117,10 @@ input::-webkit-inner-spin-button {
 
 /*Big Map*/
 .modal-map {
+  
   right: 16px;
-  top: auto;
-  bottom: 314px;
+  top: calc((100vh - 449px) / 2);
+  bottom: auto; 
   width: 943px;
   height: 449px;
   padding: 0;
@@ -2131,16 +2131,13 @@ input::-webkit-inner-spin-button {
   top: 0;
   left: 0;
   z-index: 1;
-
   margin: 0;
 }
 .modal-map iframe {
   position: relative;
   z-index: 2;
-
   border: none;
 }
-
 
 /*Modal notification*/
 
