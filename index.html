@@ -202,7 +202,7 @@
                             <div class="new-item-background">
                                 <span class="new-item"></span>
                             </div>
-                            <div class="visually-hidden catalog-item-hover">
+                            <div class="catalog-item-hover visually-hidden">
                                 <button class="button catalog-item-buy cart-icon" type="button">Купить</button>
                                 <button class="button catalog-item-bookmarks" type="button">Закладки</button>
                             </div>      
@@ -340,7 +340,7 @@
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами,<br>
                 заехав в наш офис:</p>
-                <img src="img/map.png" width="300" height="158" alt="Карта с указателем адреса: Большая Конюшеная ул., 19" >
+                <img src="img/map.png" class="map" width="300" height="158" alt="Карта с указателем адреса: Большая Конюшеная ул., 19" >
                 <a class="button contacts-button-lost" href="login.html">Заблудились? Напишите нам!</a>
             </section>
         </div>   
@@ -423,6 +423,7 @@
     <section class="modal modal-map ">
         <h2 class="visually-hidden">Расширенная карта</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="943" height="449" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        <p><img src="img/big-map.png" width="980" height="487" alt="Расширенная карта с адресом магазина: Большая Конюшеная ул., 19/8, Санкт-Петербург"><p>
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>   
 <!--Modal feedback-->       
@@ -432,15 +433,15 @@
                 <div class="feedback-user-contacts">
                         <div>
                             <label for="feedback-name">Ваше имя:</label> 
-                            <input id="feedback-name" type="text" name="user" placeholder="Имя Фамилия" required>
+                            <input id="feedback-name" type="text" name="user" placeholder="Имя Фамилия">
                         </div>
                         <div>
                             <label for="feedback-email">Ваш e-mail:</label> 
-                            <input id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
+                            <input id="feedback-email" type="email" name="email" placeholder="email@example.com">
                         </div>    
                     </div>                                  
                         <label for="feedback-message">Текст письма:</label> 
-                        <textarea id="feedback-message" name="message" rows="1" cols="1" placeholder="В свободной форме" required></textarea>
+                        <textarea id="feedback-message" name="message" rows="1" cols="1" placeholder="В свободной форме"></textarea>
                 <div class="feedback-button-wrapper">
                     <button class="button" type="submit">Отправить</button>
                 </div>        

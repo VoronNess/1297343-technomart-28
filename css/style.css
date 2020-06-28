@@ -1145,6 +1145,9 @@ button::-moz-focus-inner {
  line-height: 24px;
  margin:0;
 }
+.map {
+  cursor: pointer;
+}
 
 /*Inner-style*/
 .inner-page {
@@ -1746,7 +1749,6 @@ input::-webkit-inner-spin-button {
 
 .catalog-item-hover {
   display: flex;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2051,9 +2053,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
 }
 
-.modal-map iframe {
-  border: none;
-}
+
 /*Modal*/
 .modal {
   position: fixed;
@@ -2080,7 +2080,7 @@ input::-webkit-inner-spin-button {
 }
 .modal-error {
   animation: shake;
-  animation-duration: 1s;
+  animation-duration: 0.6s;
 }
 
 .modal-close {
@@ -2092,6 +2092,7 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  z-index:30;
 }
 .modal-close::before,
 .modal-close::after {
@@ -2117,7 +2118,7 @@ input::-webkit-inner-spin-button {
 
 /*Big Map*/
 .modal-map {
-  right:16px;
+  right: 16px;
   top: auto;
   bottom: 314px;
   width: 943px;
@@ -2125,11 +2126,25 @@ input::-webkit-inner-spin-button {
   padding: 0;
   background-color: var(--basic-white);
 }
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
 
 /*Modal notification*/
-.modal-notification {
-  display: flex;
-  flex-direction: column;
+
+.modal-notification { 
   top: 590px;
   left: 35px;
   width: 620px;
@@ -2182,8 +2197,8 @@ input::-webkit-inner-spin-button {
 /*Modal feedback*/
 
 .modal-feedback {
-  top: auto;
-  bottom: 343px; 
+  top: calc((100vh - 430px) / 2);
+  bottom: auto; 
   font-weight: 400;
   left:-15px;
   width: 620px;
@@ -2192,7 +2207,6 @@ input::-webkit-inner-spin-button {
   line-height: 24px;
 }
 .modal-feedback form {
-  
   width: 620px;
   padding-left: 80px;
   padding-top: 39px;
