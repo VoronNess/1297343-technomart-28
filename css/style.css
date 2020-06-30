@@ -18,11 +18,13 @@
   --special-brown:#8F6A33;
   --special-yellow:#FFBF47;
   --special-yellowlight:#FFD180;
+  --special-darkgreen: #367315;
+  --special-almostgreen:#518534;
   --special-green:#00CA74;
   --special-success:#5FBB2D;
+  --special-greenlight:#8ED78F;
   --special-blue:#3BBCE3;
   --special-lilac:#DC91D8;
-  --special-greenlight:#8ED78F;
   --spcial-lightgrey:#ABABAB;
   --special-grey:#A9A9A9;
   --special-light: #CFCFCF;
@@ -94,28 +96,31 @@ img {
   color: var(--basic-white);
 }
 .logo-wrapper {
-  background-color: var(--basic-red);
-  min-width: 220px;
-  min-height: 42px;  
   display: flex;
   flex-wrap: wrap;
   justify-content: center ;
   align-items: center;
   position: relative;
+  min-width: 220px;
+  min-height: 42px;  
+  background-color: var(--basic-red);
+}
+.logo-wrapper:active {
+  background-color: var(--special-error);
 }
 .logo-wrapper::after {
   content: "";
+  position: absolute;
   width: 220px;
   height: 5px;
-  position: absolute;
   bottom: -5px;
   background-color: var(--basic-red);
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-}
+} 
 .logo {
-  background-color: var(--basic-red);
   width: 108px;
   height: 17px; 
+  background-color: transparent;
 }  
 .logo:active{
   background-color: var(--special-error);
@@ -126,15 +131,15 @@ img {
   margin-right: auto;
  }
  .header-search button{
+  position: absolute;
+  top: 2px;
+  left: 15px;
   height: 42px;  
   width: 20px;
   margin: 0;
   padding: 0;
   background-color: transparent;
   border: 0;
-  position: absolute;
-  top: 2px;
-  left: 15px;
  }
  .header-search input {
   display: block;   
@@ -189,6 +194,7 @@ input[type="search"]::placeholder {
   padding-top: 10px;
   padding-right: 24px;
   padding-left: 42px; 
+  padding-bottom: 8px;
 } 
 .header-bookmarks::before {
   content: "";
@@ -219,15 +225,15 @@ input[type="search"]::placeholder {
   display: block;
   position:relative;
   padding: 9px 0;
-  padding-left: 48px;
-  padding-right: 27px;
+  padding-left: 35px;
+  padding-right: 26px;
   margin-left: auto;
 }
 .header-cart::before {
   content: "";
   position: absolute;
   top: 13px;
-  left: 25px;
+  left: 11px;
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
@@ -235,18 +241,7 @@ input[type="search"]::placeholder {
   background-position: 0 0;
   opacity: 0.3;  
 }
-.inner-page .header-cart {
-  padding-left: 35px;
-  padding-right: 21px;
-}
-.inner-page .header-cart::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 11px;
-  width: 15px;
-  height: 15px;
-}
+
 .header-cart:hover::before,
 .header-cart:focus::before {
   opacity: 1;
@@ -257,6 +252,9 @@ input[type="search"]::placeholder {
 .header-cart:active {
   color: rgba(255, 255, 255, 0.5);
   background-color:var(--basic-dark);
+}
+.header-counter{
+  background-color: var(--basic-red);
 }
 .header-order {
   margin-right: 0;
@@ -293,15 +291,16 @@ input[type="search"]::placeholder {
   width: 197px;
 }  
 .header-contact{
-  margin:0;
-  margin-top:46px;
-  margin-bottom: 40px;
-  padding:0;
   display:flex;
   flex-wrap: wrap;
   flex-direction:column;
   align-items: center;
   width: 270px;
+  margin:0;
+  margin-top:46px;
+  margin-bottom: 40px;
+  padding:0;
+  
 }
 .header-phone {
   padding-right: 42px;
@@ -315,7 +314,7 @@ input[type="search"]::placeholder {
   text-align: center;
   color: var(--basic-red);
   border: 3px var(--basic-white) solid ;
-  margin:0;
+  margin: 0;
   position: relative;
   box-sizing: border-box;
 }
@@ -323,7 +322,7 @@ input[type="search"]::placeholder {
   content: "";
   position: absolute;
   top: 10px;
-  left:36px;
+  left: 36px;
   width: 19px;
   height: 19px;
   background-image: url("../img/icon-phone.svg");
@@ -426,13 +425,13 @@ input[type="search"]::placeholder {
   min-height: 45px;
 }
 .header-login {
-  margin:0;
+  position: relative;
   font-size: 21px;
   line-height: 21px;
   padding: 12px 0px;
   padding-left: 45px;
-  padding-right:27px; 
-  position: relative;
+  padding-right: 27px; 
+  margin:0;
   color: inherit; 
   background-color: var(--basic-white);   
 }
@@ -471,7 +470,6 @@ input[type="search"]::placeholder {
 
 /* Main navigation */
 .main-navigation {
-  margin-bottom: 60px;
   display: flex;
   font-size: 18px;
   line-height: 24px;
@@ -480,6 +478,7 @@ input[type="search"]::placeholder {
   box-shadow: inset 0px -5px 0px var(--basic-darkgrey);
   padding-left: 25px;
   padding-right: 20px;
+  margin-bottom: 60px;
 }
 .site-navigation {
   display: flex;
@@ -546,18 +545,18 @@ button::-moz-focus-inner {
 
 /*Index "Promo" section*/
 .promo-section {
-  margin-top: 59px;
-  box-sizing: border-box;
   font-family: "Cuprum", "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-white);
+  margin-top: 59px;
+  box-sizing: border-box;
 }
 .promo-item a {
-  width: 135px;
   display: flex;
   justify-content: center;
+  width: 135px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: inherit;
@@ -568,11 +567,11 @@ button::-moz-focus-inner {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .promo-item h3 {
-  margin-top: 20px;
-  margin-bottom: 14px;
   font-size: 24px;
   line-height: 30px;
   font-family: "Cuprum", "PT Sans", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
 .promo-item a:hover,
 .promo-item a:focus {
@@ -620,8 +619,8 @@ button::-moz-focus-inner {
 }
 .index-promo-tools {
   grid-area: t;
-  background-color: var(--special-blue);
   position: relative;
+  background-color: var(--special-blue);
 }
 .icon-tools {
   position: absolute;
@@ -678,9 +677,10 @@ button::-moz-focus-inner {
 .promo-slider-wrapper { 
   grid-area: s2;  
   width: 620px;  
+  position: relative;
   background-repeat: no-repeat;
   background-position: top center;
-  position: relative;
+  
 }
 .promo-slider-wrapper-1 {
   background-color: var(--special-brown);
@@ -715,7 +715,7 @@ button::-moz-focus-inner {
   flex-direction: column;
   justify-content: flex-start;
   align-items:flex-start ;
-  margin-bottom:97px;
+  margin-bottom: 97px;
 }
 .slider-title {
   margin: 0;
@@ -737,7 +737,7 @@ button::-moz-focus-inner {
   font-size: 18px;
   line-height: 24px;
   width: 258px;
-  height:24px; 
+  height: 24px; 
   text-transform: none;
 }
 .button-slider {
@@ -747,9 +747,9 @@ button::-moz-focus-inner {
   align-items: center;
   margin-left: 24px;
   color: inherit;
-  width:192px;
-  height:38px;
-  padding:0; 
+  width: 192px;
+  height: 38px;
+  padding: 0; 
   margin-bottom: 26px;
   font: inherit;
   font-size: 14px;
@@ -887,7 +887,7 @@ button::-moz-focus-inner {
 }
 .popular-brands-list {
   list-style: none;
-  display:grid;
+  display: grid;
   grid-auto-rows: 145px;
   grid-template-columns: 220px 220px 220px 220px ;
   grid-template-rows: 145px 145px;
@@ -896,7 +896,7 @@ button::-moz-focus-inner {
   box-sizing: border-box;
 }
 .index-brand-item {
-  display:flex;
+  display: flex;
   margin-left: 0;
   margin-right: 0;
   border: 1px var(--basic-greylight) solid;
@@ -909,9 +909,11 @@ button::-moz-focus-inner {
 }
 .index-brand-item:hover,
 .index-brand-item:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
-
+.index-brand-item:active {
+  opacity: 0.5;
+} 
 
 /*Index Services section*/
 .index-services {
@@ -1745,38 +1747,70 @@ input::-webkit-inner-spin-button {
   width: 70px; 
   height: 70px;
   background-image: url("../img/icon-new.svg");
-}
-
-.catalog-item-hover {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 184px;
-  height: 164px;
-}
-.catalog-item-bookmarks,
-.catalog-item-buy {
-  font-family: "Cuprum", "PT Sans", sans-serif;
-  width: 135px;
-  height: 38px;
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 10px;
-  font-family: inherit;
-  color: var(--basic-white);
-  text-transform: uppercase;
+  z-index: 4;
 }
 
 /*Catalog button*/
+
+.catalog-item-hover {
+  opacity: 0;
+  position: absolute;
+  height: 135px;
+  margin: 0;
+  padding: 0;
+  padding-top: 38px;
+  padding-right: 42px;
+  padding-left: 40px;
+  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-white);
+  box-sizing: border-box;
+}
+.catalog-item:hover .catalog-item-hover{
+  opacity: 1;
+}
+
+.catalog-item-bookmarks,
 .catalog-item-buy {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 135px;
+  height: 38px;
+  font-family: inherit;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.catalog-item-buy {
+  position: relative;
+  padding-left: 24px;
   font-weight: 400;
   background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--special-darkgreen);
+  margin-bottom: 10px;
+}
+.catalog-item-buy::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no repeat ;
+  opacity: 0.3;
 }
 .catalog-item-buy:hover,
 .catalog-item-buy:focus {
   background-color: var(--special-success);
 }
+.catalog-item-buy:active {
+  background-color:  var(--special-almostgreen);
+}
+
 .catalog-item-bookmarks {
   color: var(--basic-grey);
   background-color: var(--basic-white);
@@ -1784,13 +1818,15 @@ input::-webkit-inner-spin-button {
 }
 .catalog-item-bookmarks:hover,
 .catalog-item-bookmarks:focus {
-  border: 3px var(--basic-darkgrey) solid;
+  border: 3px var(--basic-grey) solid;
 }
 .catalog-item-bookmarks:active {
   border: 3px var(--basic-greylight) solid;
   color: var(--basic-greylight);
   background-color: var(--basic-white);
 }
+
+
 
 /*Page Choice Catalog*/
 .page-choice {
@@ -1910,6 +1946,10 @@ input::-webkit-inner-spin-button {
   margin-top: 28px;
   font-size: 18px;
   line-height: 24px;
+}
+.footer-adress a {
+  color:inherit;
+  border: none;
 }
 .footer-nav-assort {
   margin:0;
@@ -2117,7 +2157,6 @@ input::-webkit-inner-spin-button {
 
 /*Big Map*/
 .modal-map {
-  
   right: 16px;
   top: calc((100vh - 449px) / 2);
   bottom: auto; 
@@ -2142,14 +2181,14 @@ input::-webkit-inner-spin-button {
 /*Modal notification*/
 
 .modal-notification { 
-  top: 590px;
+  top: calc((100vh - 282px) / 2);
+  bottom: auto; 
   left: 35px;
   width: 620px;
-  height: 282px;
   padding: 0;
 }
 .modal-notification-text {
-  align-self: center;
+  text-align: center;
   margin-top: 73px;
   margin-bottom: 50px ;
 }
@@ -2178,6 +2217,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-bottom: 0;
   margin-right: 10px;
   height: 38px;
 }

@@ -5,7 +5,7 @@
     <title>Интернет-магазин строительных материалов и инструментов для ремонта "Техномарт" </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap">
     <link rel="stylesheet" href="css/normalize.css" >
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
     <!--Header-->
@@ -26,8 +26,8 @@
                         </button>
                     </div>
                 </form>                
-                <a class="header-bookmarks" href="">Закладки: 0</a>
-                <a class="header-cart" href="">Корзина: 0</a>         
+                <a class="header-bookmarks" href=""></a>
+                <a class="header-cart" href=""></a>         
                 <a class="header-order" href="">Оформить заказ</a>              
             </div>   
         </div>
@@ -145,9 +145,9 @@
                     <!--1 product-->
                     <li class="index-product-item catalog-item"> 
                         <div class="catalog-item-wrapper">
-                            <div class=" visually-hidden catalog-item-hover">
-                                <button class="button catalog-item-buy cart-icon" type="button">Купить</button>
-                                <button class="button catalog-item-bookmarks" type="button">Закладки</button>
+                            <div class="catalog-item-hover">
+                                <button class="catalog-item-buy" type="button">Купить</button>
+                                <button class="catalog-item-bookmarks" type="button">В Закладки</button>
                             </div>                           
                             <a class="catalog-item-link" href="">                                
                                 <div class="catalog-item-image">
@@ -165,9 +165,9 @@
                             <div class="new-item-background">
                                 <span class="new-item"></span>
                             </div>
-                            <div class="visually-hidden catalog-item-hover">
-                                <button class="catalog-item-buy cart-icon" type="button">Купить</button>
-                                <button class=" catalog-item-bookmarks" type="button">Закладки</button>
+                            <div class="catalog-item-hover">
+                                <button class="catalog-item-buy" type="button">Купить</button>
+                                <button class=" catalog-item-bookmarks" type="button"> В Закладки</button>
                             </div>
                             <a class="catalog-item-link" href="">                               
                                 <div class="catalog-item-image">
@@ -182,9 +182,9 @@
                     <!--3 product-->
                     <li class="index-product-item catalog-item">
                         <div class="catalog-item-wrapper">
-                            <div class="visually-hidden catalog-item-hover">
-                                <button class="button catalog-item-buy cart-icon" type="button">Купить</button>
-                                <button class="button catalog-item-bookmarks" type="button">Закладки</button>
+                            <div class=" catalog-item-hover">
+                                <button class="catalog-item-buy" type="button">Купить</button>
+                                <button class="catalog-item-bookmarks" type="button">В Закладки</button>
                             </div>                         
                             <a class="catalog-item-link" href="">
                                 <div class="catalog-item-image">
@@ -202,9 +202,9 @@
                             <div class="new-item-background">
                                 <span class="new-item"></span>
                             </div>
-                            <div class="catalog-item-hover visually-hidden">
-                                <button class="button catalog-item-buy cart-icon" type="button">Купить</button>
-                                <button class="button catalog-item-bookmarks" type="button">Закладки</button>
+                            <div class="catalog-item-hover">
+                                <button class="catalog-item-buy cart-icon" type="button">Купить</button>
+                                <button class="catalog-item-bookmarks" type="button">В Закладки</button>
                             </div>      
                             <a class="catalog-item-link" href="">
                                 <div class="catalog-item-image">
@@ -358,7 +358,7 @@
                         </div>
                         <h2 class="visually-hidden">Адрес</h2>
                         <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                        +7 (812) 555-05-55
+                            <a href="tel:+7812555-05-55">+7 (812) 555-05-55</a>
                         </p>
                     </div>
                     <div class="footer-nav-assort">
@@ -450,6 +450,16 @@
             <div class="feedback-button-back"></div>
                 <button class="modal-close" type="button" aria-label="Закрыть"></button> 
      </section> 
-     <script src="js/feedback.js"></script>
+     <section class="modal modal-notification" >
+        <h2 class="visually-hidden">Уведомление о состоянии товара</h2>
+        <span class="icon-mark"></span>
+        <p class="modal-notification-text">Товар добавлен в корзину!</p>
+        <button class="modal-close " type="button" aria-label="Закрыть"></button>
+        <p class="modal-notification-buttons">
+            <a class="button " href="">Оформить заказ</a>
+            <button class="modal-continue-button" type="button">Продолжить покупки</button>
+        </p>
+    </section> 
+     <script src="js/scripts.min.js"></script>
 </body>
 </html>
